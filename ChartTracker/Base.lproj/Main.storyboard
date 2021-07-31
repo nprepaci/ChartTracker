@@ -28,27 +28,24 @@
                                     <action selector="getChart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbn-Jq-11m"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2D-BC-KdZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2D-BC-KdZ">
                                 <rect key="frame" x="153" y="486" width="97" height="34"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-xh-lVy">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-xh-lVy">
                                 <rect key="frame" x="153" y="536" width="109" height="68"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Ticker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FN-UF-NQ5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter Ticker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FN-UF-NQ5">
                                 <rect key="frame" x="158" y="443" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Ticker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-C5-qVf">
-                                <rect key="frame" x="153" y="68" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-C5-qVf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="63"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -57,20 +54,31 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.15000562023634867" green="0.15000562023634867" blue="0.15000562023634867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="s2D-BC-KdZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="Izv-aB-EXJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s2D-BC-KdZ" secondAttribute="trailing" constant="158" id="Mq8-MV-wm4"/>
+                            <constraint firstItem="s2D-BC-KdZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="5bQ-FN-iDz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s2D-BC-KdZ" secondAttribute="trailing" constant="164" id="88x-PM-WnH"/>
+                            <constraint firstItem="bxN-C5-qVf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8eB-Ok-Q9k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lbb-xh-lVy" secondAttribute="trailing" constant="152" id="9R7-ci-Oed"/>
+                            <constraint firstItem="7FN-UF-NQ5" firstAttribute="top" secondItem="C4f-vM-s11" secondAttribute="bottom" constant="110" id="Aw0-bA-Pnm"/>
+                            <constraint firstItem="bxN-C5-qVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BJU-PE-bah"/>
+                            <constraint firstItem="s2D-BC-KdZ" firstAttribute="top" secondItem="7FN-UF-NQ5" secondAttribute="bottom" constant="22" id="IG2-VF-jJc"/>
                             <constraint firstItem="C4f-vM-s11" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QhE-vT-iNe"/>
+                            <constraint firstItem="s2D-BC-KdZ" firstAttribute="top" secondItem="7FN-UF-NQ5" secondAttribute="bottom" constant="22" id="Wqr-tP-cMc"/>
                             <constraint firstItem="VJn-QI-p4m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="bIf-6e-qtv"/>
+                            <constraint firstItem="lbb-xh-lVy" firstAttribute="top" secondItem="s2D-BC-KdZ" secondAttribute="bottom" constant="16" id="gpz-K3-i2a"/>
                             <constraint firstItem="C4f-vM-s11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jg2-zr-CpC"/>
+                            <constraint firstItem="lbb-xh-lVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="nZZ-Vc-THP"/>
                             <constraint firstItem="C4f-vM-s11" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="pO9-CN-ODv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VJn-QI-p4m" secondAttribute="bottom" constant="188" id="tBI-Ob-hwb"/>
+                            <constraint firstItem="bxN-C5-qVf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tBY-2s-dxV"/>
+                            <constraint firstItem="C4f-vM-s11" firstAttribute="top" secondItem="bxN-C5-qVf" secondAttribute="bottom" constant="8" symbolic="YES" id="vky-pB-8P0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VJn-QI-p4m" secondAttribute="trailing" constant="130" id="wC7-8R-Fs7"/>
+                            <constraint firstItem="VJn-QI-p4m" firstAttribute="top" secondItem="lbb-xh-lVy" secondAttribute="bottom" constant="28" id="xMV-KR-OCY"/>
                             <constraint firstItem="VJn-QI-p4m" firstAttribute="top" secondItem="C4f-vM-s11" secondAttribute="bottom" constant="299" id="zJy-ja-Oxp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chartDetailsLabel" destination="bxN-C5-qVf" id="ve6-Nh-rqr"/>
                         <outlet property="datePicker" destination="lbb-xh-lVy" id="G1r-0U-YKw"/>
-                        <outlet property="dateTIckerLabel" destination="bxN-C5-qVf" id="jlN-h9-xHy"/>
                         <outlet property="getChart" destination="VJn-QI-p4m" id="Fqr-ib-zbE"/>
                         <outlet property="imageView" destination="C4f-vM-s11" id="NgA-Mx-BIo"/>
                         <outlet property="tickerTextField" destination="s2D-BC-KdZ" id="HZn-ob-5ZX"/>
