@@ -10,6 +10,9 @@ import Alamofire
 
 class ViewController: UIViewController {
     
+    let animations = Animations()
+    
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var getChart: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var tickerTextField: UITextField!
@@ -33,19 +36,19 @@ class ViewController: UIViewController {
         
         //keyboard dismissal funciton
         self.hideKeyboardWhenTappedAround()
-        animateLines()
+        //animateLines()
+        animations.animateLines(view1: tickerLine, view2: dateLine)
         activityIndicator.hidesWhenStopped = true
         
     }
     
-    @IBOutlet weak var imageView: UIImageView!
+    
     
     @IBAction func getChart(_ sender: Any) {
-        animateGetChartButton()
+        animations.animateGetChartButton(button: getChart)
         convertDateForApi()
         getDataFromApi()
         updateChartLabel()
-        
     }
     
     func getDataFromApi() {
@@ -75,11 +78,9 @@ class ViewController: UIViewController {
             }
         }
         .resume()
-        
     }
     
     func updateChartLabel() {
-        
         //self.tickerTextField.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters
         chartDetailsLabel.text = tickerTextField.text
     }
@@ -95,32 +96,6 @@ class ViewController: UIViewController {
     @objc func pinchGesture(sender: UIPinchGestureRecognizer) {
         sender.view?.transform = (sender.view?.transform.scaledBy(x: sender.scale, y: sender.scale))!
         sender.scale = 1.0
-    }
-    
-    func animateLines() {
-        UIView.animate(withDuration: 0.6,
-                       animations: {
-                        self.tickerLine.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-                        self.dateLine.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-                       },
-                       completion: { _ in
-                        UIView.animate(withDuration: 0.6) {
-                            self.tickerLine.transform = CGAffineTransform.identity
-                            self.dateLine.transform = CGAffineTransform.identity
-                        }
-                       })
-    }
-    
-    func animateGetChartButton() {
-        UIView.animate(withDuration: 0.09,
-                       animations: {
-                        self.getChart.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                       },
-                       completion: { _ in
-                        UIView.animate(withDuration: 0.09) {
-                            self.getChart.transform = CGAffineTransform.identity
-                        }
-                       })
     }
     
 }

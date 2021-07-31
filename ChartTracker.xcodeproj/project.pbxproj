@@ -17,6 +17,7 @@
 		7C5B085C26B49C840045C241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5B085A26B49C840045C241 /* LaunchScreen.storyboard */; };
 		7C5B086726B49C840045C241 /* ChartTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B086626B49C840045C241 /* ChartTrackerTests.swift */; };
 		7C5B087226B49C840045C241 /* ChartTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B087126B49C840045C241 /* ChartTrackerUITests.swift */; };
+		7C5B088226B5F3A70045C241 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B088126B5F3A70045C241 /* Animations.swift */; };
 		7CC4E06E81DBDC44566F916C /* Pods_ChartTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BE69C8C83B5599F1DA5920 /* Pods_ChartTracker.framework */; };
 		B135CE5810E491E382AD1748 /* Pods_ChartTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		7C5B086D26B49C840045C241 /* ChartTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5B087126B49C840045C241 /* ChartTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTrackerUITests.swift; sourceTree = "<group>"; };
 		7C5B087326B49C840045C241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5B088126B5F3A70045C241 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTracker_ChartTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B16518EF3BDA4EEAF9D903C /* Pods-ChartTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChartTrackerTests/Pods-ChartTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		905271C7363A87256E36679A /* Pods-ChartTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker.debug.xcconfig"; path = "Target Support Files/Pods-ChartTracker/Pods-ChartTracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				7C5B084C26B49C820045C241 /* AppDelegate.swift */,
 				7C5B084E26B49C820045C241 /* SceneDelegate.swift */,
 				7C5B085026B49C820045C241 /* ViewController.swift */,
+				7C5B088126B5F3A70045C241 /* Animations.swift */,
 				7C5B085226B49C820045C241 /* Main.storyboard */,
 				7C5B085826B49C840045C241 /* Assets.xcassets */,
 				7C5B085A26B49C840045C241 /* LaunchScreen.storyboard */,
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5B085126B49C820045C241 /* ViewController.swift in Sources */,
+				7C5B088226B5F3A70045C241 /* Animations.swift in Sources */,
 				7C5B084D26B49C820045C241 /* AppDelegate.swift in Sources */,
 				7C5B084F26B49C820045C241 /* SceneDelegate.swift in Sources */,
 				7C5B085726B49C820045C241 /* ChartTracker.xcdatamodeld in Sources */,
