@@ -1,0 +1,6 @@
+framework module Pods_ChartTracker_ChartTrackerUITests {
+  umbrella header "Pods-ChartTracker-ChartTrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

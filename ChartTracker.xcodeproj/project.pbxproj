@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104A123D7DC3A38252A8D8F9 /* Pods_ChartTracker_ChartTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */; };
 		7C5B084D26B49C820045C241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B084C26B49C820045C241 /* AppDelegate.swift */; };
 		7C5B084F26B49C820045C241 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B084E26B49C820045C241 /* SceneDelegate.swift */; };
 		7C5B085126B49C820045C241 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B085026B49C820045C241 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		7C5B085C26B49C840045C241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5B085A26B49C840045C241 /* LaunchScreen.storyboard */; };
 		7C5B086726B49C840045C241 /* ChartTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B086626B49C840045C241 /* ChartTrackerTests.swift */; };
 		7C5B087226B49C840045C241 /* ChartTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B087126B49C840045C241 /* ChartTrackerUITests.swift */; };
+		7CC4E06E81DBDC44566F916C /* Pods_ChartTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BE69C8C83B5599F1DA5920 /* Pods_ChartTracker.framework */; };
+		B135CE5810E491E382AD1748 /* Pods_ChartTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04CF1AE004CC5C53E34456EA /* Pods-ChartTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker.release.xcconfig"; path = "Target Support Files/Pods-ChartTracker/Pods-ChartTracker.release.xcconfig"; sourceTree = "<group>"; };
+		20BE69C8C83B5599F1DA5920 /* Pods_ChartTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47998C9FB62B10DA557DDA0C /* Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChartTracker-ChartTrackerUITests/Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		613E7FD4648A334B59C37830 /* Pods-ChartTracker-ChartTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker-ChartTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-ChartTracker-ChartTrackerUITests/Pods-ChartTracker-ChartTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7C5B084926B49C820045C241 /* ChartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5B084C26B49C820045C241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5B084E26B49C820045C241 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 		7C5B086D26B49C840045C241 /* ChartTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5B087126B49C840045C241 /* ChartTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTrackerUITests.swift; sourceTree = "<group>"; };
 		7C5B087326B49C840045C241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTracker_ChartTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B16518EF3BDA4EEAF9D903C /* Pods-ChartTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChartTrackerTests/Pods-ChartTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		905271C7363A87256E36679A /* Pods-ChartTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker.debug.xcconfig"; path = "Target Support Files/Pods-ChartTracker/Pods-ChartTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1462E486F279ABE5C94661 /* Pods-ChartTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-ChartTrackerTests/Pods-ChartTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC4E06E81DBDC44566F916C /* Pods_ChartTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B135CE5810E491E382AD1748 /* Pods_ChartTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104A123D7DC3A38252A8D8F9 /* Pods_ChartTracker_ChartTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		078F43B7122C089470F9ABDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20BE69C8C83B5599F1DA5920 /* Pods_ChartTracker.framework */,
+				7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */,
+				25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75F215A053B990BB4ECAC3B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				905271C7363A87256E36679A /* Pods-ChartTracker.debug.xcconfig */,
+				04CF1AE004CC5C53E34456EA /* Pods-ChartTracker.release.xcconfig */,
+				47998C9FB62B10DA557DDA0C /* Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig */,
+				613E7FD4648A334B59C37830 /* Pods-ChartTracker-ChartTrackerUITests.release.xcconfig */,
+				8B16518EF3BDA4EEAF9D903C /* Pods-ChartTrackerTests.debug.xcconfig */,
+				EE1462E486F279ABE5C94661 /* Pods-ChartTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7C5B084026B49C810045C241 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				7C5B086526B49C840045C241 /* ChartTrackerTests */,
 				7C5B087026B49C840045C241 /* ChartTrackerUITests */,
 				7C5B084A26B49C820045C241 /* Products */,
+				75F215A053B990BB4ECAC3B2 /* Pods */,
+				078F43B7122C089470F9ABDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5B087626B49C840045C241 /* Build configuration list for PBXNativeTarget "ChartTracker" */;
 			buildPhases = (
+				292F99D824CFEEF4B50C9CCE /* [CP] Check Pods Manifest.lock */,
 				7C5B084526B49C820045C241 /* Sources */,
 				7C5B084626B49C820045C241 /* Frameworks */,
 				7C5B084726B49C820045C241 /* Resources */,
+				52810D5420999A8498379083 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5B087926B49C840045C241 /* Build configuration list for PBXNativeTarget "ChartTrackerTests" */;
 			buildPhases = (
+				00DFBD3BA4A9923C1C18A6C8 /* [CP] Check Pods Manifest.lock */,
 				7C5B085E26B49C840045C241 /* Sources */,
 				7C5B085F26B49C840045C241 /* Frameworks */,
 				7C5B086026B49C840045C241 /* Resources */,
@@ -173,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5B087C26B49C840045C241 /* Build configuration list for PBXNativeTarget "ChartTrackerUITests" */;
 			buildPhases = (
+				7737A16CB5DCEE40FC7AC45E /* [CP] Check Pods Manifest.lock */,
 				7C5B086926B49C840045C241 /* Sources */,
 				7C5B086A26B49C840045C241 /* Frameworks */,
 				7C5B086B26B49C840045C241 /* Resources */,
+				7BD9B9C25B50620A8CCE2685 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +300,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DFBD3BA4A9923C1C18A6C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		292F99D824CFEEF4B50C9CCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52810D5420999A8498379083 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartTracker/Pods-ChartTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartTracker/Pods-ChartTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartTracker/Pods-ChartTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7737A16CB5DCEE40FC7AC45E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartTracker-ChartTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BD9B9C25B50620A8CCE2685 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartTracker-ChartTrackerUITests/Pods-ChartTracker-ChartTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartTracker-ChartTrackerUITests/Pods-ChartTracker-ChartTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartTracker-ChartTrackerUITests/Pods-ChartTracker-ChartTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C5B084526B49C820045C241 /* Sources */ = {
@@ -437,6 +585,7 @@
 		};
 		7C5B087726B49C840045C241 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905271C7363A87256E36679A /* Pods-ChartTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +605,7 @@
 		};
 		7C5B087826B49C840045C241 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CF1AE004CC5C53E34456EA /* Pods-ChartTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +625,7 @@
 		};
 		7C5B087A26B49C840045C241 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B16518EF3BDA4EEAF9D903C /* Pods-ChartTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +648,7 @@
 		};
 		7C5B087B26B49C840045C241 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1462E486F279ABE5C94661 /* Pods-ChartTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +671,7 @@
 		};
 		7C5B087D26B49C840045C241 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47998C9FB62B10DA557DDA0C /* Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +692,7 @@
 		};
 		7C5B087E26B49C840045C241 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613E7FD4648A334B59C37830 /* Pods-ChartTracker-ChartTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
