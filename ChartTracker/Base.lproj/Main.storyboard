@@ -24,8 +24,18 @@
                                         <rect key="frame" x="8" y="8" width="398" height="256"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="me0-DE-FvP">
+                                        <rect key="frame" x="191" y="120" width="33" height="32"/>
+                                        <color key="color" red="0.50165343134285445" green="0.75742016416607483" blue="0.50806744529765779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="me0-DE-FvP" firstAttribute="top" secondItem="jZb-tI-LUN" secondAttribute="top" constant="120" id="7kt-1f-pH8"/>
+                                    <constraint firstAttribute="trailing" secondItem="me0-DE-FvP" secondAttribute="trailing" constant="190" id="OEf-Px-52y"/>
+                                    <constraint firstAttribute="bottom" secondItem="me0-DE-FvP" secondAttribute="bottom" constant="120" id="ZGF-qE-FjV"/>
+                                    <constraint firstItem="me0-DE-FvP" firstAttribute="leading" secondItem="jZb-tI-LUN" secondAttribute="leading" constant="191" id="oa8-wg-mHI"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uC7-xI-hwS">
                                 <rect key="frame" x="0.0" y="391" width="414" height="272"/>
@@ -122,6 +132,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="me0-DE-FvP" id="Y90-Qj-sY6"/>
                         <outlet property="chartDetailsLabel" destination="bxN-C5-qVf" id="ve6-Nh-rqr"/>
                         <outlet property="dateLine" destination="mZK-HT-9Rt" id="ToE-TV-kvI"/>
                         <outlet property="datePicker" destination="lbb-xh-lVy" id="G1r-0U-YKw"/>

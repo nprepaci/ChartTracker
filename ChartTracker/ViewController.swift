@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var chartDetailsLabel: UILabel!
     @IBOutlet weak var tickerLine: UIView!
     @IBOutlet weak var dateLine: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var selectedDate = ""
     
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
         //keyboard dismissal funciton
         self.hideKeyboardWhenTappedAround()
         animateLines()
+        activityIndicator.hidesWhenStopped = true
         
     }
     
@@ -48,6 +50,8 @@ class ViewController: UIViewController {
     
     func getDataFromApi() {
         
+        activityIndicator.startAnimating()
+        
         let session = URLSession(configuration: URLSessionConfiguration.default)
         
         guard let url = URL(string: "http://api.tradingphysics.com/getchart?type=pi&date=\(selectedDate)&stock=\(tickerTextField.text ?? "")&days=1") else { return }
@@ -59,15 +63,18 @@ class ViewController: UIViewController {
             
             if let error = error {
                 print("Something went wrong: \(error)")
+                self.activityIndicator.stopAnimating()
             }
             
             if let imageData = data {
                 // The UI should be updated from the main thread
                 DispatchQueue.main.async {
                     self.imageView.image = UIImage(data: imageData)
+                    self.activityIndicator.stopAnimating()
                 }
             }
-        }.resume()
+        }
+        .resume()
         
     }
     
