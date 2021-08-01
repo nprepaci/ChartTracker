@@ -20,15 +20,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var tickerLine: UIView!
     @IBOutlet weak var dateLine: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+    @IBOutlet weak var enterTickerLabel: UILabel!
     var selectedDate = ""
     
+    @IBOutlet weak var imageviewChild: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        
+        getChart.translatesAutoresizingMaskIntoConstraints = true
         getChart.backgroundColor = UIColor.init(red: 66/255, green: 63/255, blue: 62/255, alpha: 1)
         getChart.layer.cornerRadius = 15
+        
         
         imageView.isUserInteractionEnabled = true
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(self.pinchGesture))
@@ -36,13 +39,10 @@ class ViewController: UIViewController {
         
         //keyboard dismissal funciton
         self.hideKeyboardWhenTappedAround()
-        //animateLines()
+        
         animations.animateLines(view1: tickerLine, view2: dateLine)
         activityIndicator.hidesWhenStopped = true
-        
     }
-    
-    
     
     @IBAction func getChart(_ sender: Any) {
         animations.animateGetChartButton(button: getChart)
@@ -53,6 +53,7 @@ class ViewController: UIViewController {
     
     func getDataFromApi() {
         
+        enterTickerLabel.text = ""
         activityIndicator.startAnimating()
         
         let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -88,8 +89,6 @@ class ViewController: UIViewController {
     func convertDateForApi() {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
-        print(dateFormatter.string(from: datePicker.date))
-        //return dateFormatter.string(from: datePicker.date)
         selectedDate = dateFormatter.string(from: datePicker.date)
     }
     
@@ -97,9 +96,7 @@ class ViewController: UIViewController {
         sender.view?.transform = (sender.view?.transform.scaledBy(x: sender.scale, y: sender.scale))!
         sender.scale = 1.0
     }
-    
 }
-
 
 //allows dismissal of keyboard
 extension UIViewController {
