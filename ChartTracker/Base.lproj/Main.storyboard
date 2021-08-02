@@ -9,6 +9,21 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="R9J-Pq-tvu">
+            <objects>
+                <viewController id="hIC-Ep-JHE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKZ-cM-WoI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZM3-aD-TOC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKH-C6-2wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="114"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChartTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,6 +215,7 @@
                         <outlet property="enterTickerLabel" destination="viJ-zp-3Lq" id="Ko7-X5-jx7"/>
                         <outlet property="getChart" destination="VJn-QI-p4m" id="Fqr-ib-zbE"/>
                         <outlet property="imageView" destination="C4f-vM-s11" id="NgA-Mx-BIo"/>
+                        <outlet property="parentViewToEntryFields" destination="uC7-xI-hwS" id="1OM-8u-1gp"/>
                         <outlet property="tickerLine" destination="ltu-fQ-La8" id="qM2-Wg-wV7"/>
                         <outlet property="tickerTextField" destination="s2D-BC-KdZ" id="HZn-ob-5ZX"/>
                     </connections>

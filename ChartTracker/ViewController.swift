@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var enterTickerLabel: UILabel!
     var selectedDate = ""
+    @IBOutlet weak var parentViewToEntryFields: UIView!
     
-    @IBOutlet weak var imageviewChild: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         
         animations.animateLines(view1: tickerLine, view2: dateLine)
         activityIndicator.hidesWhenStopped = true
+        animations.animateParentViewToFormFields(view: parentViewToEntryFields)
     }
     
     @IBAction func getChart(_ sender: Any) {
