@@ -384,6 +384,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - FirebaseUI
+  - GoogleSignIn
 
 SPEC REPOS:
   trunk:
@@ -440,6 +441,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
 
-PODFILE CHECKSUM: f2bde5d8b14b0b00b87a8a0d4c1d73ebe399add3
+PODFILE CHECKSUM: bda169cc8431c3ae5e76356f47d8dae801cb9c75
 
 COCOAPODS: 1.9.3

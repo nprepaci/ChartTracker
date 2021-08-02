@@ -9,6 +9,7 @@ target 'ChartTracker' do
 
 	pod 'Alamofire', '~> 5.2'
 pod 'FirebaseUI'
+pod 'GoogleSignIn'
 
   target 'ChartTrackerTests' do
     inherit! :search_paths
