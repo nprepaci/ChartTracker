@@ -14,6 +14,7 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
+    //let vc = SignInVC()
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -25,15 +26,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        print("User Email: \(user.profile.email ?? "")")
         
-       
+        if (error != nil) {
+            print("error signing in")
+        }
+        
+        //print("User Email: \(user.profile.email ?? "")")
+        //self.performSegue(withIdentifier: "loginSegue", sender: self)
+        self.login()
+        if let vc = self.window?.rootViewController as? SignInVC {
+            vc.userEmailLabel.text = "yogurt"
+        }
+        
+        
+//        guard let authentication = user.authentication else { return }
+//           let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+//                                                          accessToken: authentication.accessToken)
+        //launches notification allowing to be observed, leading to segue after successful login
+        
+        NotificationCenter.default.post(
+               name: Notification.Name("SignIn"), object: nil, userInfo: nil)
     }
+    
+    func login () {
+        // refer to our Main.storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+
+        let mainPage = storyboard.instantiateViewController(withIdentifier: "chartView")
+
+        // present tabBar that is storing in tabBar var
+        window?.rootViewController = mainPage
+    }
+
     
     func application(_ application: UIApplication, open url: URL,
                      options: [UIApplication.OpenURLOptionsKey: Any])
       -> Bool {
         return GIDSignIn.sharedInstance().handle(url)
+        
     }
 
     // MARK: UISceneSession Lifecycle
