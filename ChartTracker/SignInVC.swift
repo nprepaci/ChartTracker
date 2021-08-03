@@ -21,6 +21,7 @@ class SignInVC: UIViewController {
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
         
+        
     }
     @IBAction func updateLabelCLicked(_ sender: Any) {
         userEmailLabel.text = "gurt"
@@ -28,11 +29,12 @@ class SignInVC: UIViewController {
     
     @objc func didSignIn()  {
         //pushes new VC after successful login
-      navigationController?.pushViewController(ViewController(), animated: true)
+        performSegue(withIdentifier: "loginSegue", sender: self)
 
     }
 
-//    deinit {
-//        NotificationCenter.default.removeObserver(self)
-//    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
 }

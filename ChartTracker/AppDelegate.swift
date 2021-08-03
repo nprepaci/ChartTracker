@@ -31,22 +31,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             print("error signing in")
         }
         
+        let mainStoryboard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+        
+        self.window?.rootViewController?.performSegue(withIdentifier: "loginSegue", sender: nil)
+    
+        
         //print("User Email: \(user.profile.email ?? "")")
         //self.performSegue(withIdentifier: "loginSegue", sender: self)
-        self.login()
-        if let vc = self.window?.rootViewController as? SignInVC {
-            vc.userEmailLabel.text = "yogurt"
-        }
+        //self.login()
+//        if let vc = self.window?.rootViewController as? SignInVC {
+//            vc.userEmailLabel.text = "yogurt"
+//        }
         
         
 //        guard let authentication = user.authentication else { return }
 //           let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
 //                                                          accessToken: authentication.accessToken)
         //launches notification allowing to be observed, leading to segue after successful login
-        
         NotificationCenter.default.post(
                name: Notification.Name("SignIn"), object: nil, userInfo: nil)
+        print("User Email: \(user.profile.email ?? "")")
     }
+    
+    
     
     func login () {
         // refer to our Main.storyboard
