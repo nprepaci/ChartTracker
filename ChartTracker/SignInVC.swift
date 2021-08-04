@@ -12,22 +12,28 @@ import AVFoundation
 
 class SignInVC: UIViewController {
     
+    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var googleSignInButton: GIDSignInButton!
     let emitter = Emitter()
     var player: AVPlayer?
-    @IBOutlet weak var updateLabel: UIButton!
-    @IBOutlet weak var userEmailLabel: UILabel!
-    @IBOutlet weak var googleSignInButton: GIDSignInButton!
+    @IBOutlet weak var welcomeLabelGradient: UILabel!
+    private var gradient: CAGradientLayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //observes notification of successful login
         NotificationCenter.default.addObserver(self, selector: #selector(didSignIn), name: NSNotification.Name("SignIn"), object: nil)
         GIDSignIn.sharedInstance()?.presentingViewController = self
-        loadBackgroundVideo()
+        //loadBackgroundVideo()
+        animateLabel()
         
-    }
-    @IBAction func updateLabelCLicked(_ sender: Any) {
-        userEmailLabel.text = "gurt"
+        gradient = CAGradientLayer()
+                gradient.frame = welcomeLabelGradient.bounds
+                gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor, UIColor.clear.cgColor]
+        gradient.locations = [0, 0.1, 0.9, 1]
+                welcomeLabelGradient.layer.mask = gradient
+        
     }
     
     @objc func didSignIn()  {
@@ -63,5 +69,22 @@ class SignInVC: UIViewController {
         let player: AVPlayerItem = notification.object as! AVPlayerItem
         player.seek(to: CMTime.zero)
         
+    }
+    
+    func animateLabel() {
+        
+        welcomeLabel.text = ""
+            let titleText = "ChartTracker"
+            var charIndex = 0.0
+            for letter in titleText {
+                Timer.scheduledTimer(withTimeInterval: 0.25 * charIndex, repeats: false) { (timer) in
+                    self.welcomeLabel.text?.append(letter)
+                }
+                 charIndex += 1
+        
+            }
+        welcomeLabel.layer.zPosition = 1
+    
+    
     }
 }

@@ -18,43 +18,87 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-wK-6kv">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPQ-Tn-AAL" customClass="GIDSignInButton">
-                                <rect key="frame" x="67" y="233" width="257" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-aL-3rB" userLabel="WelcomeLabelView">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="217"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChartTracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7F-mx-Y0X">
+                                        <rect key="frame" x="65.666666666666686" y="78.666666666666671" width="259" height="60.000000000000014"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                        <color key="textColor" red="0.35041359589999999" green="0.39904886239999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RP4-ny-sLS" userLabel="Gradient">
+                                        <rect key="frame" x="54.666666666666657" y="74" width="281" height="69"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="Cwc-Uk-OVf"/>
+                                            <constraint firstAttribute="width" constant="281" id="ncw-aE-DyT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RP4-ny-sLS" firstAttribute="centerY" secondItem="aGo-aL-3rB" secondAttribute="centerY" id="Sbi-tu-T4M"/>
+                                    <constraint firstAttribute="width" secondItem="aGo-aL-3rB" secondAttribute="height" multiplier="390:217" id="TDt-0i-3E5"/>
+                                    <constraint firstItem="S7F-mx-Y0X" firstAttribute="centerY" secondItem="aGo-aL-3rB" secondAttribute="centerY" id="VJe-EA-PAO"/>
+                                    <constraint firstItem="S7F-mx-Y0X" firstAttribute="centerX" secondItem="aGo-aL-3rB" secondAttribute="centerX" id="bXW-t2-Eqz"/>
+                                    <constraint firstItem="RP4-ny-sLS" firstAttribute="centerX" secondItem="aGo-aL-3rB" secondAttribute="centerX" id="rYz-gW-1tA"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7F-mx-Y0X">
-                                <rect key="frame" x="119" y="140" width="152" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap2-VJ-fJM">
-                                <rect key="frame" x="172" y="367" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="updateLabelCLicked:" destination="hIC-Ep-JHE" eventType="touchUpInside" id="Og2-Rk-o86"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krB-Te-qhN" userLabel="GoogleSignInView">
+                                <rect key="frame" x="0.0" y="217" width="390" height="202"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPQ-Tn-AAL" customClass="GIDSignInButton">
+                                        <rect key="frame" x="66.666666666666686" y="72.666666666666686" width="257" height="57"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="257" id="Tlu-PP-k0N"/>
+                                            <constraint firstAttribute="height" constant="57" id="wYb-JR-Jbl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VPQ-Tn-AAL" firstAttribute="centerX" secondItem="krB-Te-qhN" secondAttribute="centerX" id="GvR-OX-2ds"/>
+                                    <constraint firstAttribute="width" secondItem="krB-Te-qhN" secondAttribute="height" multiplier="195:101" id="mv4-9s-6yj"/>
+                                    <constraint firstItem="VPQ-Tn-AAL" firstAttribute="centerY" secondItem="krB-Te-qhN" secondAttribute="centerY" id="vrH-Ek-9Wi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M6-FJ-Dcj" userLabel="BottomScreenView">
+                                <rect key="frame" x="0.0" y="419" width="390" height="425"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5M6-FJ-Dcj" secondAttribute="height" multiplier="78:85" id="3nx-fD-Gpo"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZM3-aD-TOC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="l5R-wK-6kv" secondAttribute="bottom" id="FxN-EW-82V"/>
-                            <constraint firstItem="l5R-wK-6kv" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="JVY-XV-7bz"/>
-                            <constraint firstItem="l5R-wK-6kv" firstAttribute="top" secondItem="kKZ-cM-WoI" secondAttribute="top" id="cuS-1t-FCu"/>
-                            <constraint firstItem="l5R-wK-6kv" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="sUL-TY-l3K"/>
+                            <constraint firstItem="l5R-wK-6kv" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="12f-er-hrm"/>
+                            <constraint firstItem="5M6-FJ-Dcj" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="3Vj-uY-Bds"/>
+                            <constraint firstItem="krB-Te-qhN" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="9UV-GG-Ksw"/>
+                            <constraint firstAttribute="bottom" secondItem="5M6-FJ-Dcj" secondAttribute="bottom" id="AfY-Pw-AZ7"/>
+                            <constraint firstItem="l5R-wK-6kv" firstAttribute="top" secondItem="kKZ-cM-WoI" secondAttribute="top" id="BFk-xX-lag"/>
+                            <constraint firstAttribute="bottom" secondItem="l5R-wK-6kv" secondAttribute="bottom" id="DfD-EP-hys"/>
+                            <constraint firstItem="5M6-FJ-Dcj" firstAttribute="top" secondItem="krB-Te-qhN" secondAttribute="bottom" id="HXZ-Nc-5yJ"/>
+                            <constraint firstItem="l5R-wK-6kv" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="Ls4-78-a86"/>
+                            <constraint firstItem="aGo-aL-3rB" firstAttribute="top" secondItem="kKZ-cM-WoI" secondAttribute="top" id="NeI-uO-LFG"/>
+                            <constraint firstItem="krB-Te-qhN" firstAttribute="top" secondItem="aGo-aL-3rB" secondAttribute="bottom" id="Pfj-EA-rUl"/>
+                            <constraint firstItem="aGo-aL-3rB" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="Q50-t3-xox"/>
+                            <constraint firstItem="krB-Te-qhN" firstAttribute="top" secondItem="aGo-aL-3rB" secondAttribute="bottom" id="VMj-qx-hvj"/>
+                            <constraint firstItem="aGo-aL-3rB" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="lTS-K6-ViB"/>
+                            <constraint firstItem="5M6-FJ-Dcj" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="mDG-OH-Y97"/>
+                            <constraint firstItem="krB-Te-qhN" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="ngh-dE-uZR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="googleSignInButton" destination="VPQ-Tn-AAL" id="8cA-7N-oBy"/>
-                        <outlet property="updateLabel" destination="Ap2-VJ-fJM" id="XuL-8w-K7B"/>
-                        <outlet property="userEmailLabel" destination="S7F-mx-Y0X" id="TTP-EM-nw7"/>
                         <outlet property="videoView" destination="l5R-wK-6kv" id="vUa-At-jHx"/>
+                        <outlet property="welcomeLabel" destination="S7F-mx-Y0X" id="mpn-43-ICU"/>
+                        <outlet property="welcomeLabelGradient" destination="S7F-mx-Y0X" id="ZAL-Hb-AYl"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginSegue" id="h9O-g6-rJe"/>
                     </connections>
                 </viewController>
