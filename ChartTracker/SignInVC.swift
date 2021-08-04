@@ -22,10 +22,8 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         //observes notification of successful login
         NotificationCenter.default.addObserver(self, selector: #selector(didSignIn), name: NSNotification.Name("SignIn"), object: nil)
-        //playBackground()
         GIDSignIn.sharedInstance()?.presentingViewController = self
-       // emitter.particleEmitter(view: view, fileName: "MovingBackground", xval: 0, yval: 0)
-        setUpView()
+        loadBackgroundVideo()
         
     }
     @IBAction func updateLabelCLicked(_ sender: Any) {
@@ -35,17 +33,16 @@ class SignInVC: UIViewController {
     @objc func didSignIn()  {
         //pushes new VC after successful login
         performSegue(withIdentifier: "loginSegue", sender: self)
-
+        
     }
-
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
     
     
-    private func setUpView(){
+    private func loadBackgroundVideo(){
         let path = URL(fileURLWithPath: Bundle.main.path(forResource: "stockmarket", ofType: "mov")!)
-          //let path = Bundle.main.path(forResource: "video", ofType: "mp4")
         let player = AVPlayer(url: path)
         
         let newLayer = AVPlayerLayer(player: player)
@@ -55,18 +52,16 @@ class SignInVC: UIViewController {
         
         player.play()
         player.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(videoReachEnd(_:)), name: NSNotification.Name(rawValue: "AVPlayerItemDidPlayToEndTimeNotification"), object: player.currentItem)
+        self.player?.isMuted = true
+        
+    }
     
-//        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.videoRe), name:  NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
-//          player!.seek(to: CMTime.zero)
-//          player!.play()
-//          self.player?.isMuted = true
-          
-      }
-      
+    //replay video once it reaches the end
     @objc func videoReachEnd (_ notification: Notification) {
         let player: AVPlayerItem = notification.object as! AVPlayerItem
-        //player.seek(to: kCMTimeZero)
         player.seek(to: CMTime.zero)
-         
-      }
+        
+    }
 }
