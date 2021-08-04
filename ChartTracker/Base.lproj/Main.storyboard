@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-wK-6kv">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPQ-Tn-AAL" customClass="GIDSignInButton">
                                 <rect key="frame" x="67" y="233" width="257" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,11 +43,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZM3-aD-TOC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="l5R-wK-6kv" secondAttribute="bottom" id="FxN-EW-82V"/>
+                            <constraint firstItem="l5R-wK-6kv" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="JVY-XV-7bz"/>
+                            <constraint firstItem="l5R-wK-6kv" firstAttribute="top" secondItem="kKZ-cM-WoI" secondAttribute="top" id="cuS-1t-FCu"/>
+                            <constraint firstItem="l5R-wK-6kv" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="sUL-TY-l3K"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="googleSignInButton" destination="VPQ-Tn-AAL" id="8cA-7N-oBy"/>
                         <outlet property="updateLabel" destination="Ap2-VJ-fJM" id="XuL-8w-K7B"/>
                         <outlet property="userEmailLabel" destination="S7F-mx-Y0X" id="TTP-EM-nw7"/>
+                        <outlet property="videoView" destination="l5R-wK-6kv" id="vUa-At-jHx"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginSegue" id="h9O-g6-rJe"/>
                     </connections>
                 </viewController>

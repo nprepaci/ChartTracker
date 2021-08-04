@@ -19,7 +19,10 @@
 		7C5B087226B49C840045C241 /* ChartTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B087126B49C840045C241 /* ChartTrackerUITests.swift */; };
 		7C5B088226B5F3A70045C241 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B088126B5F3A70045C241 /* Animations.swift */; };
 		7C5B08A226B78A050045C241 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C5B08A126B78A040045C241 /* GoogleService-Info.plist */; };
-		7C5B08A426B795E40045C241 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B08A326B795E40045C241 /* SignInVC.swift */; };
+		7C99496B26B9FBC10027AA2F /* MovingBackground.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C99496A26B9FBC10027AA2F /* MovingBackground.sks */; };
+		7C99496D26BA01640027AA2F /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99496C26BA01640027AA2F /* Emitter.swift */; };
+		7C99497226BA0E370027AA2F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99497126BA0E370027AA2F /* SignInVC.swift */; };
+		7C99497426BA0ED70027AA2F /* stockmarket.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7C99497326BA0ED70027AA2F /* stockmarket.mov */; };
 		7CC4E06E81DBDC44566F916C /* Pods_ChartTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BE69C8C83B5599F1DA5920 /* Pods_ChartTracker.framework */; };
 		B135CE5810E491E382AD1748 /* Pods_ChartTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */; };
 /* End PBXBuildFile section */
@@ -64,7 +67,10 @@
 		7C5B087326B49C840045C241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5B088126B5F3A70045C241 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		7C5B08A126B78A040045C241 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		7C5B08A326B795E40045C241 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		7C99496A26B9FBC10027AA2F /* MovingBackground.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MovingBackground.sks; sourceTree = "<group>"; };
+		7C99496C26BA01640027AA2F /* Emitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
+		7C99497126BA0E370027AA2F /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		7C99497326BA0ED70027AA2F /* stockmarket.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = stockmarket.mov; sourceTree = SOURCE_ROOT; };
 		7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTracker_ChartTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B16518EF3BDA4EEAF9D903C /* Pods-ChartTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChartTrackerTests/Pods-ChartTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		905271C7363A87256E36679A /* Pods-ChartTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker.debug.xcconfig"; path = "Target Support Files/Pods-ChartTracker/Pods-ChartTracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,12 +153,15 @@
 		7C5B084B26B49C820045C241 /* ChartTracker */ = {
 			isa = PBXGroup;
 			children = (
+				7C99497326BA0ED70027AA2F /* stockmarket.mov */,
 				7C5B084C26B49C820045C241 /* AppDelegate.swift */,
-				7C5B08A326B795E40045C241 /* SignInVC.swift */,
 				7C5B084E26B49C820045C241 /* SceneDelegate.swift */,
 				7C5B085026B49C820045C241 /* ViewController.swift */,
+				7C99497126BA0E370027AA2F /* SignInVC.swift */,
+				7C99496C26BA01640027AA2F /* Emitter.swift */,
 				7C5B088126B5F3A70045C241 /* Animations.swift */,
 				7C5B085226B49C820045C241 /* Main.storyboard */,
+				7C99496A26B9FBC10027AA2F /* MovingBackground.sks */,
 				7C5B085826B49C840045C241 /* Assets.xcassets */,
 				7C5B085A26B49C840045C241 /* LaunchScreen.storyboard */,
 				7C5B085D26B49C840045C241 /* Info.plist */,
@@ -291,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5B085C26B49C840045C241 /* LaunchScreen.storyboard in Resources */,
+				7C99497426BA0ED70027AA2F /* stockmarket.mov in Resources */,
+				7C99496B26B9FBC10027AA2F /* MovingBackground.sks in Resources */,
 				7C5B08A226B78A050045C241 /* GoogleService-Info.plist in Resources */,
 				7C5B085926B49C840045C241 /* Assets.xcassets in Resources */,
 				7C5B085426B49C820045C241 /* Main.storyboard in Resources */,
@@ -456,9 +467,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5B085126B49C820045C241 /* ViewController.swift in Sources */,
+				7C99496D26BA01640027AA2F /* Emitter.swift in Sources */,
 				7C5B088226B5F3A70045C241 /* Animations.swift in Sources */,
-				7C5B08A426B795E40045C241 /* SignInVC.swift in Sources */,
 				7C5B084D26B49C820045C241 /* AppDelegate.swift in Sources */,
+				7C99497226BA0E370027AA2F /* SignInVC.swift in Sources */,
 				7C5B084F26B49C820045C241 /* SceneDelegate.swift in Sources */,
 				7C5B085726B49C820045C241 /* ChartTracker.xcdatamodeld in Sources */,
 			);
