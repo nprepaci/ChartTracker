@@ -23,6 +23,7 @@
 		7C99496D26BA01640027AA2F /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99496C26BA01640027AA2F /* Emitter.swift */; };
 		7C99497226BA0E370027AA2F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99497126BA0E370027AA2F /* SignInVC.swift */; };
 		7C99497426BA0ED70027AA2F /* stockmarket.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7C99497326BA0ED70027AA2F /* stockmarket.mov */; };
+		7C99497B26BB7A7D0027AA2F /* trimmedCityWater.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7C99497A26BB7A7C0027AA2F /* trimmedCityWater.mov */; };
 		7CC4E06E81DBDC44566F916C /* Pods_ChartTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BE69C8C83B5599F1DA5920 /* Pods_ChartTracker.framework */; };
 		B135CE5810E491E382AD1748 /* Pods_ChartTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		7C99496C26BA01640027AA2F /* Emitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
 		7C99497126BA0E370027AA2F /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		7C99497326BA0ED70027AA2F /* stockmarket.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = stockmarket.mov; sourceTree = SOURCE_ROOT; };
+		7C99497A26BB7A7C0027AA2F /* trimmedCityWater.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = trimmedCityWater.mov; sourceTree = SOURCE_ROOT; };
 		7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTracker_ChartTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B16518EF3BDA4EEAF9D903C /* Pods-ChartTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChartTrackerTests/Pods-ChartTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		905271C7363A87256E36679A /* Pods-ChartTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker.debug.xcconfig"; path = "Target Support Files/Pods-ChartTracker/Pods-ChartTracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				7C99497326BA0ED70027AA2F /* stockmarket.mov */,
+				7C99497A26BB7A7C0027AA2F /* trimmedCityWater.mov */,
 				7C5B084C26B49C820045C241 /* AppDelegate.swift */,
 				7C5B084E26B49C820045C241 /* SceneDelegate.swift */,
 				7C5B085026B49C820045C241 /* ViewController.swift */,
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C99497B26BB7A7D0027AA2F /* trimmedCityWater.mov in Resources */,
 				7C5B085C26B49C840045C241 /* LaunchScreen.storyboard in Resources */,
 				7C99497426BA0ED70027AA2F /* stockmarket.mov in Resources */,
 				7C99496B26B9FBC10027AA2F /* MovingBackground.sks in Resources */,

@@ -14,13 +14,11 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
-    //let vc = SignInVC()
-    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        GIDSignIn.sharedInstance()?.clientID = "598003668927-m5e4g1ptqf5un94k0vjofaoe9bgrg7i4.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.clientID = "598003668927-m5e4g1ptqf5un94k0vjofaoe9bgrg7i4.apps.googleusercontent.com" //please enter your client ID here
         GIDSignIn.sharedInstance()?.delegate = self
         return true
     }
@@ -30,30 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         if (error != nil) {
             print("error signing in")
         }
-        
-        let mainStoryboard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
-        
-        self.window?.rootViewController?.performSegue(withIdentifier: "loginSegue", sender: nil)
     
-        
-        //print("User Email: \(user.profile.email ?? "")")
-        //self.performSegue(withIdentifier: "loginSegue", sender: self)
-        //self.login()
-//        if let vc = self.window?.rootViewController as? SignInVC {
-//            vc.userEmailLabel.text = "yogurt"
-//        }
-        
-        
-//        guard let authentication = user.authentication else { return }
-//           let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-//                                                          accessToken: authentication.accessToken)
         //launches notification allowing to be observed, leading to segue after successful login
         NotificationCenter.default.post(
                name: Notification.Name("SignIn"), object: nil, userInfo: nil)
         print("User Email: \(user.profile.email ?? "")")
     }
-    
-    
     
     func login () {
         // refer to our Main.storyboard
@@ -132,6 +112,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
         }
     }
-
 }
 
