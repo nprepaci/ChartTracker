@@ -23,28 +23,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-aL-3rB" userLabel="WelcomeLabelView">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="217"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChartTracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7F-mx-Y0X">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChartTracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7F-mx-Y0X">
                                         <rect key="frame" x="65.666666666666686" y="78.666666666666671" width="259" height="60.000000000000014"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
                                         <color key="textColor" red="0.35041359589999999" green="0.39904886239999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RP4-ny-sLS" userLabel="Gradient">
-                                        <rect key="frame" x="54.666666666666657" y="74" width="281" height="69"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="69" id="Cwc-Uk-OVf"/>
-                                            <constraint firstAttribute="width" constant="281" id="ncw-aE-DyT"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="RP4-ny-sLS" firstAttribute="centerY" secondItem="aGo-aL-3rB" secondAttribute="centerY" id="Sbi-tu-T4M"/>
                                     <constraint firstAttribute="width" secondItem="aGo-aL-3rB" secondAttribute="height" multiplier="390:217" id="TDt-0i-3E5"/>
                                     <constraint firstItem="S7F-mx-Y0X" firstAttribute="centerY" secondItem="aGo-aL-3rB" secondAttribute="centerY" id="VJe-EA-PAO"/>
                                     <constraint firstItem="S7F-mx-Y0X" firstAttribute="centerX" secondItem="aGo-aL-3rB" secondAttribute="centerX" id="bXW-t2-Eqz"/>
-                                    <constraint firstItem="RP4-ny-sLS" firstAttribute="centerX" secondItem="aGo-aL-3rB" secondAttribute="centerX" id="rYz-gW-1tA"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krB-Te-qhN" userLabel="GoogleSignInView">

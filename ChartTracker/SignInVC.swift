@@ -25,14 +25,27 @@ class SignInVC: UIViewController {
         //observes notification of successful login
         NotificationCenter.default.addObserver(self, selector: #selector(didSignIn), name: NSNotification.Name("SignIn"), object: nil)
         GIDSignIn.sharedInstance()?.presentingViewController = self
-        //loadBackgroundVideo()
+        loadBackgroundVideo()
         animateLabel()
         
-        gradient = CAGradientLayer()
-                gradient.frame = welcomeLabelGradient.bounds
-                gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor, UIColor.clear.cgColor]
-        gradient.locations = [0, 0.1, 0.9, 1]
-                welcomeLabelGradient.layer.mask = gradient
+//        gradient = CAGradientLayer()
+//                gradient.frame = welcomeLabelGradient.bounds
+//                gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor, UIColor.clear.cgColor]
+//        gradient.locations = [0, 0, 0, 1]
+//                welcomeLabelGradient.layer.mask = gradient
+        
+//        let shadowLayer = welcomeLabel
+//        shadowLayer?.layer.shadowColor = UIColor.black.cgColor
+//        shadowLayer?.layer.shadowOpacity = 1
+//        shadowLayer?.layer.shadowOffset = .zero
+//        shadowLayer?.layer.shadowRadius = 20
+//
+//        shadowLayer?.layer.shadowPath = UIBezierPath(rect: shadowLayer!.bounds).cgPath
+//        shadowLayer?.layer.shouldRasterize = true
+//        shadowLayer?.layer.rasterizationScale = UIScreen.main.scale
+        
+        setShadows(view: welcomeLabel)
+        setShadows(view: googleSignInButton)
         
     }
     
@@ -86,5 +99,16 @@ class SignInVC: UIViewController {
         welcomeLabel.layer.zPosition = 1
     
     
+    }
+    
+    func setShadows(view: UIView) {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 20
+        
+        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
     }
 }
