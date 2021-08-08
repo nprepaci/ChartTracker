@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 import SpriteKit
 
+
+//Original design included an emitter, decided to forgo this solution
 class Emitter {
     
     func particleEmitter(view: UIView, fileName: String, xval: Int, yval: Int) {

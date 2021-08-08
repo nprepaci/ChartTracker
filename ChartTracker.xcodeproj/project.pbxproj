@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		104A123D7DC3A38252A8D8F9 /* Pods_ChartTracker_ChartTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */; };
+		7C3E6F7E26C081600062C099 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E6F7D26C081600062C099 /* VideoPlayer.swift */; };
+		7C3E6F8026C0846C0062C099 /* AnimateLabelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E6F7F26C0846C0062C099 /* AnimateLabelText.swift */; };
 		7C5B084D26B49C820045C241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B084C26B49C820045C241 /* AppDelegate.swift */; };
 		7C5B084F26B49C820045C241 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B084E26B49C820045C241 /* SceneDelegate.swift */; };
 		7C5B085126B49C820045C241 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B085026B49C820045C241 /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47998C9FB62B10DA557DDA0C /* Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChartTracker-ChartTrackerUITests/Pods-ChartTracker-ChartTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		613E7FD4648A334B59C37830 /* Pods-ChartTracker-ChartTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker-ChartTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-ChartTracker-ChartTrackerUITests/Pods-ChartTracker-ChartTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C3E6F7D26C081600062C099 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		7C3E6F7F26C0846C0062C099 /* AnimateLabelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateLabelText.swift; sourceTree = "<group>"; };
 		7C5B084926B49C820045C241 /* ChartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5B084C26B49C820045C241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5B084E26B49C820045C241 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				7C5B084E26B49C820045C241 /* SceneDelegate.swift */,
 				7C5B085026B49C820045C241 /* ViewController.swift */,
 				7C99497126BA0E370027AA2F /* SignInVC.swift */,
+				7C3E6F7F26C0846C0062C099 /* AnimateLabelText.swift */,
+				7C3E6F7D26C081600062C099 /* VideoPlayer.swift */,
 				7C99496C26BA01640027AA2F /* Emitter.swift */,
 				7C5B088126B5F3A70045C241 /* Animations.swift */,
 				7C5B085226B49C820045C241 /* Main.storyboard */,
@@ -470,8 +476,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3E6F7E26C081600062C099 /* VideoPlayer.swift in Sources */,
 				7C5B085126B49C820045C241 /* ViewController.swift in Sources */,
 				7C99496D26BA01640027AA2F /* Emitter.swift in Sources */,
+				7C3E6F8026C0846C0062C099 /* AnimateLabelText.swift in Sources */,
 				7C5B088226B5F3A70045C241 /* Animations.swift in Sources */,
 				7C5B084D26B49C820045C241 /* AppDelegate.swift in Sources */,
 				7C99497226BA0E370027AA2F /* SignInVC.swift in Sources */,
