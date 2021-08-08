@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        GIDSignIn.sharedInstance()?.clientID = "" //please enter your client ID here
+        GIDSignIn.sharedInstance()?.clientID = "598003668927-m5e4g1ptqf5un94k0vjofaoe9bgrg7i4.apps.googleusercontent.com" //please enter your client ID here
         GIDSignIn.sharedInstance()?.delegate = self
         return true
     }
@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         //launches notification allowing to be observed, leading to segue after successful login
         NotificationCenter.default.post(
                name: Notification.Name("SignIn"), object: nil, userInfo: nil)
-        print("User Email: \(user.profile.email ?? "")")
+        //print("User Email: \(user.profile.email ?? "")")
     }
     
     func login () {

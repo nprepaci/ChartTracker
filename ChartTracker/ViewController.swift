@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Alamofire
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterTickerLabel: UILabel!
     var selectedDate = ""
     @IBOutlet weak var parentViewToEntryFields: UIView!
+    @IBOutlet weak var logOutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,15 @@ class ViewController: UIViewController {
         convertDateForApi()
         getDataFromApi()
         updateChartLabel()
+    }
+    @IBAction func logOutButtonClicked(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "logOutSegue", sender: nil)
+            print("worked")
+        } catch let error {
+            print(error)
+        }
     }
     
     func getDataFromApi() {

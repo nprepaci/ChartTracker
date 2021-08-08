@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hIC-Ep-JHE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hIC-Ep-JHE">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19134"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--Sign InVC-->
         <scene sceneID="R9J-Pq-tvu">
             <objects>
-                <viewController id="hIC-Ep-JHE" customClass="SignInVC" customModule="ChartTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hIC-Ep-JHE" customClass="SignInVC" customModule="ChartTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kKZ-cM-WoI" customClass="SCNView">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +86,7 @@
                             <constraint firstItem="krB-Te-qhN" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="ngh-dE-uZR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Q00-ic-PJz"/>
                     <connections>
                         <outlet property="googleSignInButton" destination="VPQ-Tn-AAL" id="8cA-7N-oBy"/>
                         <outlet property="videoView" destination="l5R-wK-6kv" id="vUa-At-jHx"/>
@@ -200,7 +202,7 @@
                                                 </constraints>
                                             </view>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-xh-lVy">
-                                                <rect key="frame" x="8" y="49" width="149" height="31"/>
+                                                <rect key="frame" x="-4" y="49" width="114" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="CTB-me-xtr"/>
                                                 </constraints>
@@ -211,9 +213,9 @@
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KZF-Zs-f8n" secondAttribute="trailing" constant="20" symbolic="YES" id="66d-Cd-tcP"/>
                                             <constraint firstItem="lbb-xh-lVy" firstAttribute="top" secondItem="mZK-HT-9Rt" secondAttribute="bottom" constant="8" symbolic="YES" id="7KM-vr-PjV"/>
                                             <constraint firstItem="mZK-HT-9Rt" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" id="DTZ-bt-6OH"/>
-                                            <constraint firstAttribute="trailing" secondItem="lbb-xh-lVy" secondAttribute="trailing" constant="48" id="Gpz-bP-SlU"/>
+                                            <constraint firstAttribute="trailing" secondItem="lbb-xh-lVy" secondAttribute="trailing" constant="95" id="Gpz-bP-SlU"/>
                                             <constraint firstItem="KZF-Zs-f8n" firstAttribute="top" secondItem="DD7-VN-qnb" secondAttribute="top" constant="-5" id="Iaq-si-Zyx"/>
-                                            <constraint firstItem="lbb-xh-lVy" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" constant="8" id="P5y-3v-mvm"/>
+                                            <constraint firstItem="lbb-xh-lVy" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" constant="-4" id="P5y-3v-mvm"/>
                                             <constraint firstItem="KZF-Zs-f8n" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" id="Ss5-tl-VKR"/>
                                             <constraint firstAttribute="bottom" secondItem="lbb-xh-lVy" secondAttribute="bottom" constant="22" id="XrU-xR-lx2"/>
                                             <constraint firstAttribute="trailing" secondItem="mZK-HT-9Rt" secondAttribute="trailing" constant="35" id="awO-X9-9Tu"/>
@@ -263,12 +265,23 @@
                                     <constraint firstAttribute="bottom" secondItem="VJn-QI-p4m" secondAttribute="bottom" constant="51" id="zt4-49-M8c"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QJ-ZX-mlg">
+                                <rect key="frame" x="9" y="40" width="87" height="29"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out" cornerStyle="large">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PS4-FU-8f3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.15000562023634867" green="0.15000562023634867" blue="0.15000562023634867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bxN-C5-qVf" secondAttribute="trailing" constant="124" id="5UX-JW-FdB"/>
                             <constraint firstItem="uC7-xI-hwS" firstAttribute="top" secondItem="jZb-tI-LUN" secondAttribute="bottom" constant="41" id="7zL-lk-Tvn"/>
+                            <constraint firstItem="8QJ-ZX-mlg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="99R-1n-ohc"/>
                             <constraint firstItem="bxN-C5-qVf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A4f-WW-kyh"/>
                             <constraint firstItem="uC7-xI-hwS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dt2-ra-DWt"/>
                             <constraint firstItem="bxN-C5-qVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="J8O-Ue-hWh"/>
@@ -277,7 +290,10 @@
                             <constraint firstItem="jZb-tI-LUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pto-xb-PiY"/>
                             <constraint firstItem="uC7-xI-hwS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WHb-I5-EaL"/>
                             <constraint firstItem="tUg-nB-Zfz" firstAttribute="top" secondItem="uC7-xI-hwS" secondAttribute="bottom" id="WL5-t3-T0i"/>
+                            <constraint firstItem="bxN-C5-qVf" firstAttribute="leading" secondItem="8QJ-ZX-mlg" secondAttribute="trailing" constant="28" id="b6a-GG-sTQ"/>
                             <constraint firstItem="jZb-tI-LUN" firstAttribute="top" secondItem="bxN-C5-qVf" secondAttribute="bottom" constant="13.5" id="lZL-9N-0PV"/>
+                            <constraint firstItem="jZb-tI-LUN" firstAttribute="top" secondItem="8QJ-ZX-mlg" secondAttribute="bottom" constant="9" id="qZV-KB-6rc"/>
+                            <constraint firstItem="8QJ-ZX-mlg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="y88-58-ZXF"/>
                             <constraint firstItem="jZb-tI-LUN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yNa-UE-ZKm"/>
                         </constraints>
                     </view>
@@ -290,9 +306,11 @@
                         <outlet property="enterTickerLabel" destination="viJ-zp-3Lq" id="Ko7-X5-jx7"/>
                         <outlet property="getChart" destination="VJn-QI-p4m" id="Fqr-ib-zbE"/>
                         <outlet property="imageView" destination="C4f-vM-s11" id="NgA-Mx-BIo"/>
+                        <outlet property="logOutButton" destination="8QJ-ZX-mlg" id="49P-AW-G2s"/>
                         <outlet property="parentViewToEntryFields" destination="uC7-xI-hwS" id="1OM-8u-1gp"/>
                         <outlet property="tickerLine" destination="ltu-fQ-La8" id="qM2-Wg-wV7"/>
                         <outlet property="tickerTextField" destination="s2D-BC-KdZ" id="HZn-ob-5ZX"/>
+                        <segue destination="hIC-Ep-JHE" kind="show" identifier="logOutSegue" id="kfe-AR-pwR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
