@@ -16,6 +16,7 @@ class SignInVC: UIViewController {
     @IBOutlet weak var videoView: UIView!
     @IBOutlet weak var googleSignInButton: GIDSignInButton!
     @IBOutlet weak var welcomeLabelGradient: UILabel!
+    @IBOutlet weak var signInLaterButton: UIButton!
     let emitter = Emitter()
     var player: AVPlayer?
     var videoPlayer = VideoPlayer()
@@ -31,6 +32,14 @@ class SignInVC: UIViewController {
         
         animateLabel.animateLabel(labelToAnimate: welcomeLabel)
         setShadows(view: googleSignInButton)
+        
+        signInLaterButton.translatesAutoresizingMaskIntoConstraints = true
+        signInLaterButton.backgroundColor = UIColor.init(red: 66/255, green: 63/255, blue: 62/255, alpha: 1)
+        signInLaterButton.layer.cornerRadius = 15
+    }
+    
+    @IBAction func signInLaterClicked(_ sender: Any) {
+        performSegue(withIdentifier: "loginSegue", sender: self)
     }
     
     @objc func didSignIn()  {

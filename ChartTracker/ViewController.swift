@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         getChart.backgroundColor = UIColor.init(red: 66/255, green: 63/255, blue: 62/255, alpha: 1)
         getChart.layer.cornerRadius = 15
         
-        
         imageView.isUserInteractionEnabled = true
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(self.pinchGesture))
         imageView.addGestureRecognizer(pinchGesture)

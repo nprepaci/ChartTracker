@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-wK-6kv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurred launch screen" translatesAutoresizingMaskIntoConstraints="NO" id="2sd-iH-ruU">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-wK-6kv">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-aL-3rB" userLabel="WelcomeLabelView">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="217"/>
@@ -49,10 +52,24 @@
                                             <constraint firstAttribute="height" constant="57" id="wYb-JR-Jbl"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkc-zW-Spa">
+                                        <rect key="frame" x="124" y="150" width="143" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                        <state key="normal" title="Sign In Later">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInLaterClicked:" destination="hIC-Ep-JHE" eventType="touchUpInside" id="cYN-gr-Lz7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="vkc-zW-Spa" firstAttribute="leading" secondItem="krB-Te-qhN" secondAttribute="leading" constant="124" id="3ah-N8-hGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="vkc-zW-Spa" secondAttribute="trailing" constant="123" id="41O-XJ-Tta"/>
+                                    <constraint firstAttribute="bottom" secondItem="vkc-zW-Spa" secondAttribute="bottom" constant="23" id="Did-sw-L3i"/>
                                     <constraint firstItem="VPQ-Tn-AAL" firstAttribute="centerX" secondItem="krB-Te-qhN" secondAttribute="centerX" id="GvR-OX-2ds"/>
+                                    <constraint firstItem="vkc-zW-Spa" firstAttribute="top" secondItem="VPQ-Tn-AAL" secondAttribute="bottom" constant="20.333333333333314" id="dBb-CR-0Hr"/>
                                     <constraint firstAttribute="width" secondItem="krB-Te-qhN" secondAttribute="height" multiplier="195:101" id="mv4-9s-6yj"/>
                                     <constraint firstItem="VPQ-Tn-AAL" firstAttribute="centerY" secondItem="krB-Te-qhN" secondAttribute="centerY" id="vrH-Ek-9Wi"/>
                                 </constraints>
@@ -70,6 +87,7 @@
                         <constraints>
                             <constraint firstItem="l5R-wK-6kv" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="12f-er-hrm"/>
                             <constraint firstItem="5M6-FJ-Dcj" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="3Vj-uY-Bds"/>
+                            <constraint firstItem="2sd-iH-ruU" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="4QQ-6G-Fdj"/>
                             <constraint firstItem="krB-Te-qhN" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="9UV-GG-Ksw"/>
                             <constraint firstAttribute="bottom" secondItem="5M6-FJ-Dcj" secondAttribute="bottom" id="AfY-Pw-AZ7"/>
                             <constraint firstItem="l5R-wK-6kv" firstAttribute="top" secondItem="kKZ-cM-WoI" secondAttribute="top" id="BFk-xX-lag"/>
@@ -80,6 +98,9 @@
                             <constraint firstItem="krB-Te-qhN" firstAttribute="top" secondItem="aGo-aL-3rB" secondAttribute="bottom" id="Pfj-EA-rUl"/>
                             <constraint firstItem="aGo-aL-3rB" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="Q50-t3-xox"/>
                             <constraint firstItem="krB-Te-qhN" firstAttribute="top" secondItem="aGo-aL-3rB" secondAttribute="bottom" id="VMj-qx-hvj"/>
+                            <constraint firstAttribute="bottom" secondItem="2sd-iH-ruU" secondAttribute="bottom" id="YCX-xT-sNs"/>
+                            <constraint firstItem="2sd-iH-ruU" firstAttribute="top" secondItem="kKZ-cM-WoI" secondAttribute="top" id="YSV-Xo-hPf"/>
+                            <constraint firstItem="2sd-iH-ruU" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="bQT-0a-GI4"/>
                             <constraint firstItem="aGo-aL-3rB" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="lTS-K6-ViB"/>
                             <constraint firstItem="5M6-FJ-Dcj" firstAttribute="trailing" secondItem="ZM3-aD-TOC" secondAttribute="trailing" id="mDG-OH-Y97"/>
                             <constraint firstItem="krB-Te-qhN" firstAttribute="leading" secondItem="ZM3-aD-TOC" secondAttribute="leading" id="ngh-dE-uZR"/>
@@ -88,6 +109,7 @@
                     <navigationItem key="navigationItem" id="Q00-ic-PJz"/>
                     <connections>
                         <outlet property="googleSignInButton" destination="VPQ-Tn-AAL" id="8cA-7N-oBy"/>
+                        <outlet property="signInLaterButton" destination="vkc-zW-Spa" id="Ig1-dR-iOF"/>
                         <outlet property="videoView" destination="l5R-wK-6kv" id="vUa-At-jHx"/>
                         <outlet property="welcomeLabel" destination="S7F-mx-Y0X" id="mpn-43-ICU"/>
                         <outlet property="welcomeLabelGradient" destination="S7F-mx-Y0X" id="ZAL-Hb-AYl"/>
@@ -315,6 +337,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blurred launch screen" width="964" height="930"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
