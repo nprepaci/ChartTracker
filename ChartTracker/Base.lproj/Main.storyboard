@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hIC-Ep-JHE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hIC-Ep-JHE">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -202,7 +201,7 @@
                                                 </constraints>
                                             </view>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="lbb-xh-lVy">
-                                                <rect key="frame" x="-4" y="49" width="114" height="31"/>
+                                                <rect key="frame" x="8" y="49" width="126" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="CTB-me-xtr"/>
                                                 </constraints>
@@ -213,9 +212,9 @@
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KZF-Zs-f8n" secondAttribute="trailing" constant="20" symbolic="YES" id="66d-Cd-tcP"/>
                                             <constraint firstItem="lbb-xh-lVy" firstAttribute="top" secondItem="mZK-HT-9Rt" secondAttribute="bottom" constant="8" symbolic="YES" id="7KM-vr-PjV"/>
                                             <constraint firstItem="mZK-HT-9Rt" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" id="DTZ-bt-6OH"/>
-                                            <constraint firstAttribute="trailing" secondItem="lbb-xh-lVy" secondAttribute="trailing" constant="95" id="Gpz-bP-SlU"/>
+                                            <constraint firstAttribute="trailing" secondItem="lbb-xh-lVy" secondAttribute="trailing" constant="71" id="Gpz-bP-SlU"/>
                                             <constraint firstItem="KZF-Zs-f8n" firstAttribute="top" secondItem="DD7-VN-qnb" secondAttribute="top" constant="-5" id="Iaq-si-Zyx"/>
-                                            <constraint firstItem="lbb-xh-lVy" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" constant="-4" id="P5y-3v-mvm"/>
+                                            <constraint firstItem="lbb-xh-lVy" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" constant="8" id="P5y-3v-mvm"/>
                                             <constraint firstItem="KZF-Zs-f8n" firstAttribute="leading" secondItem="DD7-VN-qnb" secondAttribute="leading" id="Ss5-tl-VKR"/>
                                             <constraint firstAttribute="bottom" secondItem="lbb-xh-lVy" secondAttribute="bottom" constant="22" id="XrU-xR-lx2"/>
                                             <constraint firstAttribute="trailing" secondItem="mZK-HT-9Rt" secondAttribute="trailing" constant="35" id="awO-X9-9Tu"/>
@@ -267,10 +266,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QJ-ZX-mlg">
                                 <rect key="frame" x="9" y="40" width="87" height="29"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log Out" cornerStyle="large">
-                                    <backgroundConfiguration key="background"/>
-                                </buttonConfiguration>
+                                <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logOutButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PS4-FU-8f3"/>
                                 </connections>

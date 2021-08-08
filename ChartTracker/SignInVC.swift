@@ -26,7 +26,10 @@ class SignInVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(didSignIn), name: NSNotification.Name("SignIn"), object: nil)
         GIDSignIn.sharedInstance()?.presentingViewController = self
         
-        loadBackgroundVideo()
+        DispatchQueue.main.async {
+            self.loadBackgroundVideo()
+        }
+        
         animateLabel()
         setShadows(view: googleSignInButton)
         
