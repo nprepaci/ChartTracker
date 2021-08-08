@@ -17,6 +17,7 @@ class SignInVC: UIViewController {
     @IBOutlet weak var googleSignInButton: GIDSignInButton!
     @IBOutlet weak var welcomeLabelGradient: UILabel!
     @IBOutlet weak var signInLaterButton: UIButton!
+    @IBOutlet weak var loginButtonBackground: UIView!
     let emitter = Emitter()
     var player: AVPlayer?
     var videoPlayer = VideoPlayer()
@@ -34,8 +35,10 @@ class SignInVC: UIViewController {
         setShadows(view: googleSignInButton)
         
         signInLaterButton.translatesAutoresizingMaskIntoConstraints = true
-        signInLaterButton.backgroundColor = UIColor.init(red: 66/255, green: 63/255, blue: 62/255, alpha: 1)
+        signInLaterButton.backgroundColor = UIColor.init(red: 178/255, green: 184/255, blue: 163/255, alpha: 1)
         signInLaterButton.layer.cornerRadius = 15
+        
+        //loginButtonBackground.layer.cornerRadius = 10
     }
     
     @IBAction func signInLaterClicked(_ sender: Any) {

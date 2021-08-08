@@ -44,8 +44,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krB-Te-qhN" userLabel="GoogleSignInView">
                                 <rect key="frame" x="0.0" y="217" width="390" height="202"/>
                                 <subviews>
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbd-0O-suJ">
+                                        <rect key="frame" x="0.0" y="8" width="390" height="155"/>
+                                        <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPQ-Tn-AAL" customClass="GIDSignInButton">
-                                        <rect key="frame" x="66.666666666666686" y="72.666666666666686" width="257" height="57"/>
+                                        <rect key="frame" x="67" y="25" width="257" height="57"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="257" id="Tlu-PP-k0N"/>
@@ -53,7 +57,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkc-zW-Spa">
-                                        <rect key="frame" x="124" y="150" width="143" height="29"/>
+                                        <rect key="frame" x="124" y="119" width="143" height="36"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                         <state key="normal" title="Sign In Later">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,16 +66,31 @@
                                             <action selector="signInLaterClicked:" destination="hIC-Ep-JHE" eventType="touchUpInside" id="cYN-gr-Lz7"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ego-8w-8cC">
+                                        <rect key="frame" x="175" y="95" width="40" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="vkc-zW-Spa" firstAttribute="leading" secondItem="krB-Te-qhN" secondAttribute="leading" constant="124" id="3ah-N8-hGJ"/>
                                     <constraint firstAttribute="trailing" secondItem="vkc-zW-Spa" secondAttribute="trailing" constant="123" id="41O-XJ-Tta"/>
-                                    <constraint firstAttribute="bottom" secondItem="vkc-zW-Spa" secondAttribute="bottom" constant="23" id="Did-sw-L3i"/>
-                                    <constraint firstItem="VPQ-Tn-AAL" firstAttribute="centerX" secondItem="krB-Te-qhN" secondAttribute="centerX" id="GvR-OX-2ds"/>
-                                    <constraint firstItem="vkc-zW-Spa" firstAttribute="top" secondItem="VPQ-Tn-AAL" secondAttribute="bottom" constant="20.333333333333314" id="dBb-CR-0Hr"/>
+                                    <constraint firstAttribute="bottom" secondItem="vkc-zW-Spa" secondAttribute="bottom" constant="47" id="Did-sw-L3i"/>
+                                    <constraint firstAttribute="trailing" secondItem="VPQ-Tn-AAL" secondAttribute="trailing" constant="66" id="Gvr-N5-72k"/>
+                                    <constraint firstItem="ego-8w-8cC" firstAttribute="top" secondItem="VPQ-Tn-AAL" secondAttribute="bottom" constant="13" id="HTX-83-p42"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tbd-0O-suJ" secondAttribute="bottom" constant="39" id="NHS-d0-Gtb"/>
+                                    <constraint firstItem="ego-8w-8cC" firstAttribute="top" secondItem="VPQ-Tn-AAL" secondAttribute="bottom" constant="13" id="Ool-QW-yyw"/>
+                                    <constraint firstItem="VPQ-Tn-AAL" firstAttribute="top" secondItem="krB-Te-qhN" secondAttribute="top" constant="25" id="QKu-Ko-2CS"/>
+                                    <constraint firstItem="ego-8w-8cC" firstAttribute="leading" secondItem="krB-Te-qhN" secondAttribute="leading" constant="175" id="edl-X4-NzM"/>
+                                    <constraint firstItem="VPQ-Tn-AAL" firstAttribute="leading" secondItem="krB-Te-qhN" secondAttribute="leading" constant="67" id="fbY-ng-Ygr"/>
                                     <constraint firstAttribute="width" secondItem="krB-Te-qhN" secondAttribute="height" multiplier="195:101" id="mv4-9s-6yj"/>
-                                    <constraint firstItem="VPQ-Tn-AAL" firstAttribute="centerY" secondItem="krB-Te-qhN" secondAttribute="centerY" id="vrH-Ek-9Wi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tbd-0O-suJ" secondAttribute="trailing" id="qMP-Xg-4RM"/>
+                                    <constraint firstItem="vkc-zW-Spa" firstAttribute="top" secondItem="ego-8w-8cC" secondAttribute="bottom" constant="3" id="r8i-j7-dwd"/>
+                                    <constraint firstItem="Tbd-0O-suJ" firstAttribute="top" secondItem="krB-Te-qhN" secondAttribute="top" constant="8" id="sZs-Xx-lxc"/>
+                                    <constraint firstItem="Tbd-0O-suJ" firstAttribute="leading" secondItem="krB-Te-qhN" secondAttribute="leading" id="sgK-zm-RIr"/>
+                                    <constraint firstAttribute="trailing" secondItem="ego-8w-8cC" secondAttribute="trailing" constant="175" id="x1r-wV-Bee"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M6-FJ-Dcj" userLabel="BottomScreenView">
@@ -109,6 +128,7 @@
                     <navigationItem key="navigationItem" id="Q00-ic-PJz"/>
                     <connections>
                         <outlet property="googleSignInButton" destination="VPQ-Tn-AAL" id="8cA-7N-oBy"/>
+                        <outlet property="loginButtonBackground" destination="Tbd-0O-suJ" id="9s5-so-GJ8"/>
                         <outlet property="signInLaterButton" destination="vkc-zW-Spa" id="Ig1-dR-iOF"/>
                         <outlet property="videoView" destination="l5R-wK-6kv" id="vUa-At-jHx"/>
                         <outlet property="welcomeLabel" destination="S7F-mx-Y0X" id="mpn-43-ICU"/>
