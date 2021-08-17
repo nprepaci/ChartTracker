@@ -39,7 +39,20 @@ class ViewController: UIViewController {
         animations.animateLines(view1: tickerLine, view2: dateLine)
         animations.animateParentViewToFormFields(view: parentViewToEntryFields)
         activityIndicator.hidesWhenStopped = true
+        
+        tickerTextField.text = UserDefaults.standard.string(forKey: "defaultTicker")
+        self.navigationController?.isNavigationBarHidden = false
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tickerTextField.text = UserDefaults.standard.string(forKey: "defaultTicker")
+        //sets nav bar back to clear from white
+        navigationController?.navigationBar.barTintColor = UIColor.clear
+        //sets navbartitle color
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
     
     @IBAction func getChart(_ sender: Any) {
         animations.animateGetChartButton(button: getChart)
@@ -60,6 +73,12 @@ class ViewController: UIViewController {
     func updateChartLabel() {
         //self.tickerTextField.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters
         chartDetailsLabel.text = tickerTextField.text
+        self.navigationItem.title = tickerTextField.text
+    }
+    
+    
+    @IBAction func settingsButtonClicked(_ sender: Any) {
+        performSegue(withIdentifier: "settingsSegue", sender: self)
     }
     
     @objc func pinchGesture(sender: UIPinchGestureRecognizer) {

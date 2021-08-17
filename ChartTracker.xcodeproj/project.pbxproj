@@ -13,7 +13,7 @@
 		7C3E6F8626C0D2B80062C099 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E6F8526C0D2B80062C099 /* API.swift */; };
 		7C5B084D26B49C820045C241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B084C26B49C820045C241 /* AppDelegate.swift */; };
 		7C5B084F26B49C820045C241 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B084E26B49C820045C241 /* SceneDelegate.swift */; };
-		7C5B085126B49C820045C241 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B085026B49C820045C241 /* ViewController.swift */; };
+		7C5B085126B49C820045C241 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B085026B49C820045C241 /* MainVC.swift */; };
 		7C5B085426B49C820045C241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5B085226B49C820045C241 /* Main.storyboard */; };
 		7C5B085726B49C820045C241 /* ChartTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C5B085526B49C820045C241 /* ChartTracker.xcdatamodeld */; };
 		7C5B085926B49C840045C241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5B085826B49C840045C241 /* Assets.xcassets */; };
@@ -28,6 +28,9 @@
 		7C99497426BA0ED70027AA2F /* stockmarket.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7C99497326BA0ED70027AA2F /* stockmarket.mov */; };
 		7C99497B26BB7A7D0027AA2F /* trimmedCityWater.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7C99497A26BB7A7C0027AA2F /* trimmedCityWater.mov */; };
 		7CC4E06E81DBDC44566F916C /* Pods_ChartTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BE69C8C83B5599F1DA5920 /* Pods_ChartTracker.framework */; };
+		7CF294EF26C73A840030395F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF294EE26C73A840030395F /* SettingsView.swift */; };
+		7CF8C87626CB503B001656D1 /* EditDefaultTickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF8C87526CB503A001656D1 /* EditDefaultTickerView.swift */; };
+		7CF8C87826CB5BC1001656D1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF8C87726CB5BC1001656D1 /* DataManager.swift */; };
 		B135CE5810E491E382AD1748 /* Pods_ChartTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25538D1DFE39EC82860D6054 /* Pods_ChartTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +63,7 @@
 		7C5B084926B49C820045C241 /* ChartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5B084C26B49C820045C241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5B084E26B49C820045C241 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C5B085026B49C820045C241 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C5B085026B49C820045C241 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7C5B085326B49C820045C241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C5B085626B49C820045C241 /* ChartTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChartTracker.xcdatamodel; sourceTree = "<group>"; };
 		7C5B085826B49C840045C241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +82,9 @@
 		7C99497126BA0E370027AA2F /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		7C99497326BA0ED70027AA2F /* stockmarket.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = stockmarket.mov; path = ChartTracker/MovFiles/stockmarket.mov; sourceTree = SOURCE_ROOT; };
 		7C99497A26BB7A7C0027AA2F /* trimmedCityWater.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = trimmedCityWater.mov; path = ChartTracker/MovFiles/trimmedCityWater.mov; sourceTree = SOURCE_ROOT; };
+		7CF294EE26C73A840030395F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7CF8C87526CB503A001656D1 /* EditDefaultTickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDefaultTickerView.swift; sourceTree = "<group>"; };
+		7CF8C87726CB5BC1001656D1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = ChartTracker/View/DataManager.swift; sourceTree = SOURCE_ROOT; };
 		7E3C1CD200BB5B4CBE454A5A /* Pods_ChartTracker_ChartTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTracker_ChartTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B16518EF3BDA4EEAF9D903C /* Pods-ChartTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChartTrackerTests/Pods-ChartTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		905271C7363A87256E36679A /* Pods-ChartTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTracker.debug.xcconfig"; path = "Target Support Files/Pods-ChartTracker/Pods-ChartTracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,9 +145,11 @@
 		7C3E6F8126C0CEED0062C099 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7C5B085026B49C820045C241 /* ViewController.swift */,
+				7C5B085026B49C820045C241 /* MainVC.swift */,
 				7C99497126BA0E370027AA2F /* SignInVC.swift */,
 				7C5B085226B49C820045C241 /* Main.storyboard */,
+				7CF8C87526CB503A001656D1 /* EditDefaultTickerView.swift */,
+				7CF294EE26C73A840030395F /* SettingsView.swift */,
 				7C5B085A26B49C840045C241 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -163,6 +171,7 @@
 		7C3E6F8326C0CF000062C099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7CF8C87726CB5BC1001656D1 /* DataManager.swift */,
 				7C3E6F8526C0D2B80062C099 /* API.swift */,
 				7C99496A26B9FBC10027AA2F /* MovingBackground.sks */,
 			);
@@ -512,7 +521,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3E6F7E26C081600062C099 /* VideoPlayer.swift in Sources */,
-				7C5B085126B49C820045C241 /* ViewController.swift in Sources */,
+				7C5B085126B49C820045C241 /* MainVC.swift in Sources */,
+				7CF8C87626CB503B001656D1 /* EditDefaultTickerView.swift in Sources */,
 				7C99496D26BA01640027AA2F /* Emitter.swift in Sources */,
 				7C3E6F8026C0846C0062C099 /* AnimateLabelText.swift in Sources */,
 				7C3E6F8626C0D2B80062C099 /* API.swift in Sources */,
@@ -521,6 +531,8 @@
 				7C99497226BA0E370027AA2F /* SignInVC.swift in Sources */,
 				7C5B084F26B49C820045C241 /* SceneDelegate.swift in Sources */,
 				7C5B085726B49C820045C241 /* ChartTracker.xcdatamodeld in Sources */,
+				7CF8C87826CB5BC1001656D1 /* DataManager.swift in Sources */,
+				7CF294EF26C73A840030395F /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

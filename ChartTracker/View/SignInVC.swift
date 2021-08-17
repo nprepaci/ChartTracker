@@ -31,14 +31,24 @@ class SignInVC: UIViewController {
         
         videoPlayer.loadBackgroundVideo(videoView: videoView)
         
-        animateLabel.animateLabel(labelToAnimate: welcomeLabel)
+        
         setShadows(view: googleSignInButton)
         
         signInLaterButton.translatesAutoresizingMaskIntoConstraints = true
         signInLaterButton.backgroundColor = UIColor.init(red: 178/255, green: 184/255, blue: 163/255, alpha: 1)
         signInLaterButton.layer.cornerRadius = 15
         
+        self.navigationController?.isNavigationBarHidden = true
         //loginButtonBackground.layer.cornerRadius = 10
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        animateLabel.animateLabel(labelToAnimate: welcomeLabel)
     }
     
     @IBAction func signInLaterClicked(_ sender: Any) {
