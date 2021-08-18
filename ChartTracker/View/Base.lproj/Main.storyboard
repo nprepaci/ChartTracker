@@ -340,7 +340,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.15000562023634867" green="0.15000562023634867" blue="0.15000562023634867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.14902219180000001" green="0.14901494979999999" blue="0.14901983739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bxN-C5-qVf" secondAttribute="trailing" constant="124" id="5UX-JW-FdB"/>
                             <constraint firstItem="uC7-xI-hwS" firstAttribute="top" secondItem="jZb-tI-LUN" secondAttribute="bottom" constant="41" id="7zL-lk-Tvn"/>
@@ -362,7 +362,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Select Ticker" id="AlD-il-CAx">
                         <barButtonItem key="backBarButtonItem" title="Back" id="a3N-HN-EaG"/>
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Hi4-MG-Pvf">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" image="gearshape" catalog="system" id="Hi4-MG-Pvf">
                             <connections>
                                 <action selector="settingsButtonClicked:" destination="BYZ-38-t0r" id="0cc-VN-JnY"/>
                             </connections>
@@ -397,12 +397,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Imh-fK-RLQ">
-                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Imh-fK-RLQ">
+                                <rect key="frame" x="0.0" y="103" width="390" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="N5X-ei-d4x" detailTextLabel="CC1-yh-V5R" style="IBUITableViewCellStyleValue1" id="Chc-EO-Tx5">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="49" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Chc-EO-Tx5" id="HSi-xl-GrG">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
@@ -431,7 +431,7 @@
                         <viewLayoutGuide key="safeArea" id="TTt-PF-l0r"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Imh-fK-RLQ" firstAttribute="top" secondItem="TTt-PF-l0r" secondAttribute="top" id="0ms-eC-inz"/>
+                            <constraint firstItem="Imh-fK-RLQ" firstAttribute="top" secondItem="TTt-PF-l0r" secondAttribute="top" constant="15" id="0ms-eC-inz"/>
                             <constraint firstItem="Imh-fK-RLQ" firstAttribute="leading" secondItem="TTt-PF-l0r" secondAttribute="leading" id="EY6-Sl-k9m"/>
                             <constraint firstItem="Imh-fK-RLQ" firstAttribute="trailing" secondItem="TTt-PF-l0r" secondAttribute="trailing" id="LfR-Ky-WcZ"/>
                             <constraint firstItem="Imh-fK-RLQ" firstAttribute="bottom" secondItem="TTt-PF-l0r" secondAttribute="bottom" id="oI5-wa-tsd"/>
@@ -510,10 +510,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XL4-mF-4Ag"/>
+        <segue reference="kfe-AR-pwR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="blurred launch screen" width="964" height="930"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

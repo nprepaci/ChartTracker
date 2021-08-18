@@ -37,9 +37,12 @@ extension SettingsView: UITableViewDelegate {
 
 extension SettingsView: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView,
-                            titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+       // cell.title.font = UIFont(name:"Avenir", size:22)
+       // header.tex
         return "Preferences"
+        
+        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -67,6 +70,8 @@ extension SettingsView: UITableViewDataSource {
         cell.detailTextLabel?.text = UserDefaults.standard.string(forKey: "defaultTicker")
         //cell.textLabel?.text = placeholderArray[indexPath.section][indexPath.row]
        // cell.textLabel?.text = placeholderArray[indexPath.row]
+        cell.textLabel!.font = UIFont(name:"System", size:18)
+        cell.detailTextLabel?.font = UIFont(name:"System", size:18)
         return cell
     }
 }
