@@ -18,6 +18,10 @@ Once all required fields are entered, a user must click the "Get Chart" button. 
 
 A user can add a default stock ticker via the settings screen. This allows the user to have a ticker pre-populated in the ticker field on app launch.
 
+## App Images
+
+[My Website - Projects](https://www.nicholasrepaci.com/projects)
+
 ## Help
 
 Submit a [GitHub Issues request](https://github.com/nprepaci/ChartTracker/issues). 
